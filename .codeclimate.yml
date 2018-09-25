@@ -1,0 +1,12 @@
+plugins:
+  checkstyle:
+    enabled: true
+  sonar-java:
+    enabled: true
+    config:
+      sonar.java.source: 8
+      test_patterns:
+        - app/src/test/**
+        - app/src/androidTest/**
+      minimum_severity: info
+
